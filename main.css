@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgba(240, 239, 239, 0.137);
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+header h1{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.container,
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+#registration-form{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.input-field label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-field input,
+#registration-form button{
+    border-radius: 3px;
+    border: .8px solid rgba(128, 128, 128, 0.466);
+}
+.input-field input{
+    margin: 8px 0 14px 0;
+    height: 35px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+#name-error, 
+#email-error, 
+#tel-error, 
+#document-error, 
+#address-error, 
+#area-code-error{
+    font-size: 14px;
+    color: red;
+    margin: -8px 0 15px 0;
+}
+#registration-form button{
+    height: 45px;
+    width: 150px;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: rgba(15, 45, 218, 0.651);
+    color: #fff;
+    cursor: pointer;
+}
+#registration-form button:active{
+    transform: all ease .6s;
+    scale: 1.1;
+    text-decoration: underline;
+}
