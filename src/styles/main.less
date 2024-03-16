@@ -1,0 +1,75 @@
+@backgroundColor: rgb(202,175,130);
+@headerFont: "Kanit", sans-serif;;
+@inputFont: "Merriweather", serif;
+@textColor: #312a2a;
+@buttonColor: #ccc;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: @backgroundColor;
+}
+
+h1{
+    font-family: @headerFont;
+    font-size: 3.5em;
+    color: @textColor;
+    
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 15px;
+    font-family: @inputFont;
+}
+
+#form{
+    font-size: 1.5em;
+    
+    div{
+        margin: 20px 0;
+    }
+    input{
+        height: 35px;
+        border: none;
+        border-radius: 15px;
+        font-family: @inputFont;
+        padding: 6px;
+        font-size: .8em;
+    }
+
+    button{
+        height: 60px;
+        width: 180px;
+        font-size: 1em;
+        font-weight: bold;
+        background-color: @buttonColor;
+        color: #000;
+        margin: 40px 0;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:active{
+            transform: scale(1.1);
+            transition: all ease .5s;
+        }
+    }
+}
+
+.result{
+    font-size: 1.7em;
+    margin-top: 10%;
+    display: none;
+    
+    #multiplication-result{
+        font-weight: bold;
+    }
+}
